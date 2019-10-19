@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="Keywords" content="photography, portrait, landscape, cosplay, beautiful, photograph">
+<meta name="Description" content="Beautiful photos by Picturesque Photography">
+<meta name="Author" content="Jenna Roberts">
+
+<link rel="icon" href="images/favicon.ico">
+<title>Picturesque Photography</title>
+ 
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" src="js/onepagescroll.js"></script>
+  <link  rel="stylesheet" type="text/css" href="js/onepage-scroll.css">
+  <link  rel="stylesheet" type="text/css" href="picturesquephotographynav.css">
+  <script>
+		function showNav() {
+			"use strict";
+			var x = document.getElementById('nav');
+    			if (x.style.height === '238px') {
+        			x.style.height = '60px';
+    			} else {
+					x.style.height = '238px';
+				}
+			}
+  </script>
+
+</head>
+
+<body>
+   
+    <header>
+		<nav id="nav">
+				<h1 style="positon:absolute;float:left;margin:10px 0px;padding:0px 15px;font-size:28pt; color:white; cursor:pointer" onclick="showNav();"> ≡ </h1>
+				<h1 style="color:white;">Picturesque Photography</h1>
+				<ul>
+				<li><p style="margin:0; padding:0;cursor:pointer;color:white;display:inline-block;" onClick="moveTo('.main', 1)"> Home</p></li>
+				<li><p style="margin:0; padding:0;cursor:pointer;color:white;display:inline-block;" onClick="moveTo('.main', 2)"> About</p></li>
+				<li><p style="margin:0; padding:0;cursor:pointer;color:white;display:inline-block;" onClick="moveTo('.main', 3)"> Services</p></li>
+				<li><p style="margin:0; padding:0;cursor:pointer;color:white;display:inline-block;" onClick="moveTo('.main', 4)"> Gallery</p></li>
+				<li><p style="margin:0; padding:0;cursor:pointer;color:white;display:inline-block;" onClick="moveTo('.main', 5)"> Contact</p></li>
+				
+				<!--<li><a href="#home"> Home</a></li>
+				<li><a href="#about"> About</a></li>
+				<li><a href="#services"> Services</a></li>
+				<li><a href="#gallery"> Gallery</a></li>
+				<li><a href="#contact"> Contact</a></li>-->
+			</ul>
+		</nav>
+	</header>
+  
+	  <div class="main">
+	    
+      <section id="home" class="page" style="opacity:1.0;background-image: url('images/millpond.jpeg');background-size:cover;vertical-align: bottom;background-position: bottom;"> 
+      
+		 <!-- <video muted loop id="frontpagevid">
+		  <source src="images/frontpage.mp4" >
+		  </video> -->
+		  
+		<div class="content" style="max-width:300px;width:85%;background-color: #000000;opacity:.8;position:absolute; top:70px; left:10px;">
+			<h1>Home</h1>
+			<p>Welcome to Picturesque Photography!</p>
+			<p>Picturesque Photography is a phofessional photography business in the New England area, with specializations in landscapes and portraits, especially in formal events and cosplay.</p>
+			<p>PP's last event was at Anime Boston in the Hynes Convention Center, Boston, MA. Check out the gallery below!</p>
+			
+		</div>
+	  </section>
+	    
+	  <section id="about" class="page" style="opacity:1.0;background-image: url('images/about.jpg');background-size:cover;vertical-align: bottom;background-position: bottom;"> 
+	    <div class="content" style="max-width:300px; width:85%; margin-right:40px;background-color: #000000;opacity:.8;position:absolute; top:70px; left:10px;">
+			<h1>About</h1>
+			<p>Jenna is a young college student at Massachusetts Bay Community College. Her interest in photography started in high school through a vocational school program which introduced her to many different forms and mediums of art. She began taking photos professionally after a photography course taught her how to frame her images, and began teaching it to others while working at an arts center in Bolton, MA. </p>
+			<p>Jenna's hobbies in costuming, exploring, and cooking allow her to shoot many subjects casually.</p>
+			<p>Jenna's favorite subjects include beautiful scenery, her friends, home-cooked food, and local cosplayers.</p>
+	    </div>
+      </section>
+	    
+	  <section id="services" class="page" style="background-image: url('images/services.jpg');background-size:cover;vertical-align: bottom;background-position: bottom;">
+	    <div class="content" style="max-width:300px; width:85%; background-color: #000000;opacity:.8;position:absolute; top:70px; left:10px;">
+			<h1>Services</h1>
+ 	    	<p>Listed below are some of the many services provided: </p>
+			<ul>
+				<li><strong>High School Portraits:</strong> Immortalize your golden days. It's all downhill from here.</li>
+				<li><strong>Costume Photoshoots:</strong> Don't worry, we're all weeaboos here.</li>
+				<li><strong>Family Portraits:</strong> Your little snots will look darling once we've finished photoshopping their smile on.</li>
+				<li><strong>Sport Events:</strong> We can freeze that touchdown in time forever, so even if you forget about that concussion, you'll always be reminded! </li>
+				<li><strong>Weddings:</strong> We will know if you're destined for divorce.</li>
+				<li><strong>Landscapes:</strong> Trying to sell that ugly house? Haha. Good luck.</li>
+				<li><strong>Scenes:</strong> No minors. </li>
+				<li>And more!</li>
+			</ul></div>
+      </section>
+      
+      <section id="gallery" class="page" style="background-image: url('images/jellyfish.jpg');background-size:cover;vertical-align: bottom;background-position: bottom;">
+	    <div class="content" style="background-color:rgba(0,0,0,.9);margin-top:40px;">
+   			<h1>Gallery</h1>
+			<p>Below are a few examples of successful shoots.</p>
+			
+			 <div class="variable slider" style="width:95%; background:black;">
+				<div>
+					<video controls loop style="height:300px; width:auto;opacity: 1;">
+					<source src="images/frontpage.mp4">
+					</video>
+				</div>
+			    <div>
+      			  <img src="images/armstrong.jpg" style="height:300px; width:auto;background-color:black;">
+   				</div>
+  				<div>
+      			  <img src="images/batter.jpg" style="height:300px; width:auto;background-color:black;">
+    			</div>
+    			<div>
+      			  <img src="images/kanaya.jpg" style="height:300px; width:auto;background-color:black;">
+    			</div>
+    			<div>
+      			  <img src="images/knight.jpg" style="height:300px; width:auto;background-color:black;">
+    			</div>
+    			<div>
+      			  <img src="images/mysterygirl.jpg" style="height:300px; width:auto;background-color:black;">
+    			</div>
+			 </div>
+  
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      
+      $(".variable").slick({
+        dots: true,
+        infinite: true,
+        variableWidth: true,
+		centerMode: true
+      });
+    });
+  </script>
+			
+		</div>
+	</section>	 
+       
+      <section id="contact" class="page" style="opacity:1.0;background-image: url('images/contact.jpeg');background-size:cover;vertical-align: bottom;background-position: bottom;"> 
+	    <div class="content" style="max-width:300px; width:85%;background-color: #000000;opacity:.8;position:absolute; top:70px; left:10px;">
+			<h1>Contact</h1>
+			<a href="https://www.facebook.com/jenna.s.roberts" target="_blank"><img src="images/fuck facebook.png" width="25"></a>
+			<a href="https://www.instagram.com/JennasPicturesquePhotography/" target="_blank"><img src="images/instagram.png" width="25"></a>
+			<p>Fill out your info to schedule a shoot.</p>
+			<form action="contact.php" method="post">
+				<fieldset>
+					<legend><h2> Get In Touch! </h2></legend>
+					
+					<p style="margin: 0px;">Name: <br /><input type="text" name="name" > <br />
+					Email: <br /><input type="email" name="email"><br />
+					Phone: <br /><input type="tel"><br />
+					Setting: <br /><input type="text" name="location"><br />
+					Date of shoot: <br /><input type="date" name="date"><br />
+					<input type="submit" value="Submit"></p>				
+			
+				</fieldset>
+			</form>
+  	    </div>
+      </section>
+    </div>
+    
+  <script>
+	 onePageScroll(".main", {
+     sectionContainer: "section",
+     loop: true,
+     responsiveFallback: true,
+   });
+  </script>
+	
+</body>
+</html>
