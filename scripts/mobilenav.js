@@ -1,7 +1,7 @@
 // JavaScript Document
 function navToggle() {	
 	var x = document.getElementById("nav");
-	var y = document.getElementById("myCarousel");
+	var y = document.getElementById("main");
 	if (x.style.height !== "287px") {
 		x.style.height = "287px";
 		y.style.marginTop = "287px";

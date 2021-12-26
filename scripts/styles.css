@@ -442,7 +442,13 @@ input[type=submit]:hover {
   background-color: #440000;
 }
 
+@media screen and (max-width: 1010px) {
 
+.smallspace {
+		max-width:45%;
+}
+
+}
 
 @media screen and (max-width: 800px) {
 	
@@ -544,12 +550,16 @@ nav ul li {
 	padding: 5%;
 }
 
+.bigspace .title {
+	padding: 25px 25px 25px 0px;
+}
+
 .smallspace {
 	max-width:100%;
 }
 
 .smallspace p {
-	padding: 25px 0px 25px 25px;
+	padding: 25px 0px 10px 25px;
 }
 
 @media screen and (max-width: 600px) {
