@@ -7,11 +7,16 @@
 	margin:0;
 	padding:0;
 }
+
+html {
+	height:100%;
+}
 body {
 	background-color:#440000 !important;
 	font-family:Gabriola, Vollkorn, serif !important;
 	font-style:italic;
 	color:white !important;
+	height:100%;
 }
 
 p {
@@ -25,7 +30,6 @@ img {
 
 header {
 	width:100%;
-	height:100%;
 	background-color:#303030;
 	border-bottom: 1px solid white;
 }
@@ -131,6 +135,45 @@ main {
 
 }
 
+.container {
+	width:100%;
+	height:100%;
+}
+.parallax {
+	/*opacity:.75;*/
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 600px;
+	height:100% !important;
+	min-width:100%;
+	width:100% !important;
+}
+
+.parallax-1 {
+	background-image: url("../images/redwhitehibiscusblend.png");
+}
+
+.parallax-2 {
+	background-image: url("../images/tropicalhibiscus.png");
+}
+
+.parallax-3 {
+	background-image: url("../images/zinniabee.jpg");
+}
+
+.bigspace {
+	box-sizing: border-box;
+	padding:15%;
+}
+.bigspace p {
+	font-family:Gabriola, Vollkorn, serif !important;
+	font-size:24pt;
+}
+
+
 .content {
 	padding:25px 0;
 }
@@ -194,6 +237,28 @@ main {
 .artgallery p {
 	text-align:center;
 	margin-top:25px;
+}
+
+.modal-dialog {
+	width:80% !important;
+	height:90% !important;
+	margin:auto !important;
+}
+.modal-body {
+	padding:0px !important;
+}
+.modal-body button {
+	border:none;
+	margin: 10px;
+	font-size:16pt;
+	background-color:transparent !important;	
+}
+
+.modal-content {
+	background-color:transparent !important;
+	border:none !important;
+	box-shadow:none !important;
+	height:90% !important;
 }
 
 .cta {
@@ -280,18 +345,18 @@ footer p {
 .column {
   flex: calc(100% / 4 - 20px);
   max-width: 25%;
-  padding: 0 10px;
+  margin: 0 10px;
 }
 .half {
   flex: calc(100% / 2 - 10px);
   max-width:50%;
-  padding: 0 10px;
+  margin: 0 10px;
 }
 .column:first-child {
-	padding-left:0px;
+	margin-left:0px;
 }
 .column:last-child {
-	padding-right:0px;
+	margin-right:0px;
 }
 
 .column img {
@@ -317,7 +382,7 @@ input[type=text],input[type=email], select, textarea {
   font-family:Gabriola, Vollkorn, sans-serif;
   border: 1px solid #fff;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   resize: vertical;
   font-size:16pt;
 
@@ -348,15 +413,15 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 800px) {
-  .column {
+.column {
     flex: calc(100% / 2 - 20px);
     max-width: 50%;
-  }
-  .column:first-child {
-	padding-left:10px;
+}
+.column:first-child {
+	margin-left:10px;
 }
 .column:last-child {
-	padding-right:10px;
+	margin-right:10px;
 }
 .content h2 {
 	font-size:20pt;
@@ -438,9 +503,9 @@ nav ul li {
 	padding:0px;
   }
   .column:first-child {
-	padding-left:0px;
+	margin-left:10px;
 }
 .column:last-child {
-	padding-right:0px;
+	margin-right:10px;
 }
 }
