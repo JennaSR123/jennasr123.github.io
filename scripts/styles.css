@@ -113,10 +113,13 @@ nav .active {
 }
 
 .button {
-	padding:15px 15px;
+	font-family:Gabriola, Vollkorn, serif !important;
+	padding:15px 25px;
+	margin:10px 0;
+	font-style:italic;
 	background-color:#880000;
 	font-size:14pt;
-	line-height:2.5;
+	line-height:4.5;
 	font-weight:400;
 	border-bottom:0px solid #303030;
 	transition:background-color .5s;
@@ -215,7 +218,7 @@ main {
 /*Sets the images on the homepage. Add as many as needed.*/
 
 .parallax-1 {
-	background-image: url("../images/tropicalhibiscus.png");
+	background-image: url("../images/coverhibiscus2.png");
 }
 
 .parallax-2 {
@@ -237,11 +240,13 @@ Because it's a big space.*/
 .bigspace {
 	box-sizing: border-box;
 	padding:10%;
+	/*border-top: 1px solid white;
+	border-bottom: 1px solid white;*/
 }
 .bigspace .title {
 	display:inline-block;
 	vertical-align:top;
-	padding:50px 25px;
+	padding:50px 50px 50px 0px;
 }
 
 .bigspace h2 {
@@ -257,12 +262,12 @@ Because it's a big space.*/
 
 .smallspace {
 	display:inline-block;
-	max-width:50%;
+	max-width:60%;
 	padding:0;
 	border-left:1px solid white;
 }
 .smallspace p {
-	padding:50px;
+	padding:50px 0px 25px 50px;
 }
 
 .artgallery {
@@ -529,6 +534,22 @@ nav ul li {
 }
 .cta .text.left { 
 	margin-right:0px;
+}
+
+.parallax {
+	background-attachment: scroll;
+}
+
+.bigspace {
+	padding: 5%;
+}
+
+.smallspace {
+	max-width:100%;
+}
+
+.smallspace p {
+	padding: 25px 0px 25px 25px;
 }
 
 @media screen and (max-width: 600px) {
