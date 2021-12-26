@@ -164,6 +164,10 @@ main {
 	background-image: url("../images/zinniabee.jpg");
 }
 
+.parallax-4 {
+	background-image: url("../images/redhibiscus.jpg");
+}
+
 .bigspace {
 	box-sizing: border-box;
 	padding:15%;
