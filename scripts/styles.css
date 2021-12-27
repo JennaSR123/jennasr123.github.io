@@ -242,6 +242,17 @@ Because it's a big space.*/
 	padding:10%;
 	/*border-top: 1px solid white;
 	border-bottom: 1px solid white;*/
+	animation: fadeIn ease 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 .bigspace .title {
 	display:inline-block;
