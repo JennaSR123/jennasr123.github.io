@@ -37,7 +37,7 @@
 </nav>
 </header>
 
-<main>
+<main id="main">
 
 <img src="images/gallery3.png" />
 
@@ -45,7 +45,7 @@
     
     <p> </p>
     
-    <h2 class="line">Web Design</h2>
+    <h2 class="line" id="webdesign">Web Design</h2>
     <h3>My work in action.</h3>
     <p></p>
     
@@ -70,7 +70,7 @@
     <!-- Content below here gets a modal on click-->
     <div class="modalholder" id="modalholder"> 
     
-    <h2 class="line">Photography</h2>
+    <h2 class="line" id="photography">Photography</h2>
     <h3>These were taken on a Nikon D780 at the Tower Hill Botanical Garden.</h3>
     <p></p>
     
@@ -104,20 +104,43 @@
     <h3>The logo's there for a reason.</h3>
     <p></p>
     
-    <div class="artgallery">
+    <div class="artgallery" data-toggle="modal" data-target="#exampleModal">
     <div class="row">
       <div class="column">
-        <a href="images/redhibiscuszoom.png"><img src="images/redhibiscuszoom.png" /></a>
+        <img src="images/redhibiscuszoom.png" data-target="#carouselExample" data-slide-to="12"/>
       </div>
       <div class="column">
-        <a href="images/peachhibiscus.JPG"><img src="images/peachhibiscus.JPG" /></a>
+        <img src="images/peachhibiscus.JPG" data-target="#carouselExample" data-slide-to="13"/>
       </div>
       <div class="column">
-        <a href="images/redwhitehibiscusblend.png"><img src="images/redwhitehibiscusblend.png" /></a>
+        <img src="images/redwhitehibiscusblend.png" data-target="#carouselExample" data-slide-to="14"/>
       </div>
       <div class="column">
-        <a href="images/hibiscus.JPG"><img src="images/hibiscus.JPG" /></a>
+        <img src="images/hibiscus.JPG" data-target="#carouselExample" data-slide-to="15"/>
       </div>
+      </div>
+    </div>
+    
+    
+    <p> </p><p> </p><p> </p>
+    <h2 class="line" id="costumebuilds">Costume Builds</h2>
+    <h3>What I do in my spare time.</h3>
+    <p></p>
+    
+    <div class="artgallery">
+    <div class="row">
+     <div class="column">
+            <a href="portiadevorak.html"><img src="images/portiadevorak.jpg"  /></a>
+            <p><a href="portiadevorak.html">Portia Devorak (The Arcana)</a></p>
+        </div>
+        <div class="column">
+            <a href="rosequartz.html"><img src="images/rosequartz.jpg" /></a>
+            <p><a href="rosequartz.html">Rose Quartz (Steven Universe)</a></p>
+        </div>
+        <div class="column">
+            <a href="red.html"><img src="images/red.jpg" /></a>
+            <p><a href="red.html">[WIP] Red (Transistor)</a></p>
+        </div>
       </div>
     </div>
     
@@ -142,37 +165,50 @@
               <img src="images/redwhitehibiscus.jpg">
             </div>
             <div class="item">
-              <img  src="images/pagoda.jpg">
+              <img src="images/pagoda.jpg">
             </div>
             
             <div class="item">
-              <img  src="images/panflute.jpg">
+              <img src="images/panflute.jpg">
             </div>
             <div class="item">
-              <img  src="images/spiderflower.jpg">
+              <img src="images/spiderflower.jpg">
             </div>
             <div class="item">
-              <img  src="images/openwings.jpg">
-            </div>
-            
-            <div class="item">
-              <img  src="images/redwhitedahlia.jpg">
-            </div>
-            <div class="item">
-              <img  src="images/eliwings.jpg">
-            </div>
-            <div class="item">
-              <img  src="images/iris.jpg">
+              <img src="images/openwings.jpg">
             </div>
             
             <div class="item">
-              <img  src="images/monarch2.jpg">
+              <img src="images/redwhitedahlia.jpg">
             </div>
             <div class="item">
-              <img  src="images/zinniabee.jpg">
+              <img src="images/eliwings.jpg">
             </div>
             <div class="item">
-              <img  src="images/cherub.jpg">
+              <img src="images/iris.jpg">
+            </div>
+            
+            <div class="item">
+              <img src="images/monarch2.jpg">
+            </div>
+            <div class="item">
+              <img src="images/zinniabee.jpg">
+            </div>
+            <div class="item">
+              <img src="images/cherub.jpg">
+            </div>
+            
+            <div class="item">
+              <img src="images/redhibiscuszoom.png">
+            </div>
+            <div class="item">
+              <img src="images/peachhibiscus.jpg">
+            </div>
+            <div class="item">
+              <img src="images/redwhitehibiscusblend.png">
+            </div>
+            <div class="item">
+              <img src="images/hibiscus.jpg">
             </div>
           </div>
           
