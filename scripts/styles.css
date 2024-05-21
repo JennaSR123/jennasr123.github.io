@@ -214,7 +214,7 @@ main {
 
 .parallax {
 	/*opacity:.75;*/
-	background-color:#FFCC00; /*I have yet to optimize a single image so this makes the background red until it loads in*/
+	background-color:#FFCC00; /*I have yet to optimize a single image so this makes the background yellow until it loads in*/
 	position: relative;
 	background-attachment: fixed;
 	background-position: center;
@@ -231,11 +231,11 @@ main {
 /*Sets the images on the homepage. Add as many as needed.*/
 
 .parallax-1 {
-	background-image: url("../images/summersunset.jpg");
+	background-image: url("../images/mantisonface.jpg");
 }
 
 .parallax-2 {
-	background-image: url("../images/mantisonface.jpg");
+	background-image: url("../images/monch.jpg");
 }
 
 .parallax-3 {
@@ -474,11 +474,11 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 1010px) {
 
-.smallspace {
+/*.smallspace {
 		max-width:45%;
 }
 
-}
+}*/
 
 @media screen and (max-width: 800px) {
 	
@@ -523,7 +523,8 @@ input[type=submit]:hover {
 }
 
 header h1 {
-	font-size:24pt;
+	height:0px;
+	overflow:hidden;
 }
 .content h2 {
 	font-size:20pt;
