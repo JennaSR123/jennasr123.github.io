@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Quicksand:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 * {
 	/*box-sizing: border-box;*/
 	margin:0;
@@ -12,16 +12,15 @@ html {
 	height:100%;
 }
 body {
-	background-color:#440000 !important;
-	font-family:Gabriola, Vollkorn, serif !important;
-	font-style:italic;
+	background-color:#FFCC00 !important;
+	font-family:Lexend, serif !important;
 	color:white !important;
 	height:100%;
 }
 
 p {
 	font-size:11pt;
-	font-family:Montserrat, sans-serif;
+	font-family:Open Sans, sans-serif;
 }
 
 img {
@@ -37,8 +36,8 @@ header {
 header h1 {
 	display:inline-block;
 	vertical-align:middle;
-	font-size:26pt;
-	margin-top:4px ;
+	font-size:22pt;
+	margin-top:0px;
 	margin-bottom:0px;
 	line-height:2.0;
 	font-weight:400;
@@ -68,25 +67,25 @@ nav ul li {
 a {
 	color:white !important;
 	text-decoration:none !important;
-	border-bottom: 2px solid #880000;
+	border-bottom: 2px solid #98E7A6;
 	transition:border-bottom .5s;
 }
 
 nav a, footer a {
 	border-bottom: 2px solid #303030;
 	transition:border-bottom .5s;
-	font-family:Gabriola, Vollkorn, serif;
-	font-size:16pt;
+	font-family:Lexend, serif;
+	font-size:14pt;
 }
 
 a:hover {
-	border-bottom: 2px solid #440000;
+	border-bottom: 2px solid #FFCC00;
 	transition:border-bottom .5s;
 	text-decoration:none;
 }
 
 nav a:hover, footer a:hover {
-	border-bottom: 2px solid #880000;
+	border-bottom: 2px solid #98E7A6;
 	transition:border-bottom .5s;
 }
 
@@ -98,7 +97,7 @@ nav a:hover, footer a:hover {
 }
 
 a:active {
-	border-bottom: 2px solid #880000;
+	border-bottom: 2px solid #98E7A6;
 }
 
 #myCarousel {
@@ -109,15 +108,15 @@ a:active {
 }
 
 nav .active {
-	border-bottom: 2px solid #880000;
+	border-bottom: 2px solid #98E7A6;
 }
 
 .button {
-	font-family:Gabriola, Vollkorn, serif !important;
+	font-family:Lexend, serif !important;
 	padding:15px 25px;
 	margin:10px 0;
 	font-style:italic;
-	background-color:#880000;
+	background-color:#98E7A6;
 	font-size:14pt;
 	line-height:4.5;
 	font-weight:400;
@@ -126,7 +125,7 @@ nav .active {
 }
 
 .button:hover {
-	background-color:#440000;
+	background-color:#FFCC00;
 	border-bottom:0px solid #303030;
 	transition:background-color .5s;
 }
@@ -149,8 +148,12 @@ main {
 	padding:25px 0;
 }
 
-.content p, .content h1, .content h2, .content ul{
-	padding:0 5%;
+.content.sidepage {
+	padding:60px 60px 0px 60px;
+}
+
+.content p, .content h1, .content h2, .content ul, .content ol {
+	font-size:11pt;
 	font-weight:300;
 	font-style:normal;
 	padding-bottom:20px;
@@ -158,14 +161,12 @@ main {
 }
 
 .content h1 {
-	font-style:italic;
 	padding-bottom: 0px;
 }
 
 .content h2 {
-	font-family:Gabriola, Vollkorn, serif;
+	font-family:Lexend, serif;
 	font-size:24pt;
-	font-style:italic;
 	text-align:center;
 	margin:25px 5%;
 	padding-bottom:25px;
@@ -173,24 +174,35 @@ main {
 }
 
 .content h3 {
-	font-family:Montserrat, sans-serif;
-	font-size:10pt;
-	font-style: italic;
+	font-family:Lexend, sans-serif;
+	font-size:18pt;
 	text-align: center;
 	font-weight:300;
 	margin:15px 0;
 }
+.content.sidepage h3 {
+	text-align: left;
+}
 
-.content ul {
+.content ul, .content ol {
 	width:90%;
 	margin:0 auto;
-	font-family:Montserrat, sans-serif;	
+	font-family:Open Sans, sans-serif;
 }
 
 .content li {
 	margin-left:25px;
 	padding-left:10px;
 }
+
+.toc {
+	float:right;
+	margin:15px;
+	padding:10px 25px;
+	max-width:300px;
+	border: 1px solid white;
+}
+
 
 .line {
   background-image: linear-gradient(to right, white, #303030 35%, #303030 50%, #303030 65%, white);
@@ -202,7 +214,7 @@ main {
 
 .parallax {
 	/*opacity:.75;*/
-	background-color:#440000; /*I have yet to optimize a single image so this makes the background red until it loads in*/
+	background-color:#FFCC00; /*I have yet to optimize a single image so this makes the background red until it loads in*/
 	position: relative;
 	background-attachment: fixed;
 	background-position: center;
@@ -219,19 +231,19 @@ main {
 /*Sets the images on the homepage. Add as many as needed.*/
 
 .parallax-1 {
-	background-image: url("../images/coverhibiscus2.png");
+	background-image: url("../images/summersunset.jpg");
 }
 
 .parallax-2 {
-	background-image: url("../images/redwhitehibiscusblend.png");
+	background-image: url("../images/mantisonface.jpg");
 }
 
 .parallax-3 {
-	background-image: url("../images/zinniabee.JPG");
+	background-image: url("../images/nikemaybe.jpg");
 }
 
 .parallax-4 {
-	background-image: url("../images/redhibiscus.JPG");
+	background-image: url("../images/whoisthiseven.JPG");
 }
 
 /*Bigspace holds all the non-image 
@@ -275,12 +287,17 @@ Because it's a big space.*/
 
 .smallspace {
 	display:inline-block;
-	max-width:60%;
 	padding:0;
 	border-left:1px solid white;
 }
 .smallspace p {
-	padding:50px 0px 25px 50px;
+	padding-left:50px;
+}
+.smallspace p:first-of-type, .smallspace ul:first-of-type, .smallspace ol:first-of-type {
+	padding-top:25px;
+}
+.smallspace p:last-of-type, .smallspace ul:last-of-type, .smallspace ol:last-of-type {
+	padding-bottom:25px;
 }
 
 .artgallery {
@@ -385,7 +402,7 @@ footer ul li a {
 		text-decoration:none;
 }
 footer p {
-	font-family:Gabriola, Vollkorn, serif;
+	font-family:Lexend, serif;
 	margin:0;
 }
 
@@ -432,7 +449,7 @@ input[type=text],input[type=email], select, textarea {
   padding: 5px;
   background-color:#303030;
   color:white;
-  font-family:Gabriola, Vollkorn, sans-serif;
+  font-family:Lexend, sans-serif;
   border: 1px solid #fff;
   box-sizing: border-box;
   margin-bottom: 10px;
@@ -442,17 +459,17 @@ input[type=text],input[type=email], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #880000;
+  background-color: #FFCC00;
   color: white;
   padding: 5px 25px;
   border: none;
   cursor: pointer;
-  font-family:Gabriola, Vollkorn, serif;
+  font-family:Lexend, serif;
   font-size:16pt;
 }
 
 input[type=submit]:hover {
-  background-color: #440000;
+  background-color: #FFCC00;
 }
 
 @media screen and (max-width: 1010px) {
