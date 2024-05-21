@@ -478,7 +478,7 @@ input[type=submit]:hover {
 		max-width:45%;
 }
 
-}*/
+}
 
 @media screen and (max-width: 800px) {
 	
@@ -605,5 +605,6 @@ nav ul li {
 }
 .column:last-child {
 	margin-right:10px;
+}
 }
 }
