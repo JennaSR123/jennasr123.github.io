@@ -295,9 +295,10 @@ Because it's a big space.*/
 }
 
 .modal-dialog {
-	width:80% !important;
-	height:90% !important;
-	margin:auto !important;
+	width:auto !important;
+	height: calc(90vh - 0px) !important;
+	overflow: hidden;
+	margin: 5vh 75px  !important;
 }
 .modal-body {
 	padding:0px !important;
@@ -313,7 +314,6 @@ Because it's a big space.*/
 	background-color:transparent !important;
 	border:none !important;
 	box-shadow:none !important;
-	height:90% !important;
 }
 
 .cta {
